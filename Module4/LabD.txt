@@ -1,0 +1,5 @@
+﻿Ввести рефлексию:
+1. Определить атрибут ParameterAtribute, содержащий имя параметра и диапазон его изменения
+2. Убрать методы GetParameters и AcceptParameters из интерфейса ISettings
+3. Добавить класс SettingsExtension, определить в нем GetParameters и AcceptParameters, используя рефлексю
+4. Разметить поля LighteningSettings атрибутами

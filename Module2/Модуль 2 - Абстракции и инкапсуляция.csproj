@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04D622F7-E44E-4982-B3EC-09CF9398CF90}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Module2</RootNamespace>
+    <AssemblyName>Module2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Лекция 3 - Методы\L3S05 - Удаление out-параметров с помощью класса.cs" />
+    <Compile Include="Лекция 3 - Методы\L3S01 - Перегруженные методы.cs" />
+    <Compile Include="Лекция 3 - Методы\L3S02 - Параметры по умолчанию.cs" />
+    <Compile Include="Лекция 3 - Методы\L3S03 - Переменное количество параметров.cs" />
+    <Compile Include="Лекция 3 - Методы\L3S04 - out-параметры.cs" />
+    <Compile Include="Лекция 3 - Методы\L3S06 - Удаление out-параметров с помощью Tuple.cs" />
+    <Compile Include="Лекция 3 - Методы\L3S07 - ref-параметры.cs" />
+    <Compile Include="Лекция 3 - Методы\L3S08 - ref-параметры.cs" />
+    <Compile Include="Лекция 3 - Методы\L3S10 - Модульное тестирование.cs" />
+    <Compile Include="Лекция 2 - Члены классов и модификаторы доступа\L2S04 - Статические конструкторы.cs" />
+    <Compile Include="Лекция 2 - Члены классов и модификаторы доступа\L2S03 - Статические члены.cs" />
+    <Compile Include="Лекция 2 - Члены классов и модификаторы доступа\L2S01 - Ошибки целостности.cs" />
+    <Compile Include="Лекция 2 - Члены классов и модификаторы доступа\L2S02 - Защита целостности.cs" />
+    <Compile Include="Лекция 2 - Члены классов и модификаторы доступа\L2S05 - Модификатор internal.cs" />
+    <Compile Include="Лекция 2 - Члены классов и модификаторы доступа\L2S06 - Модификатор internal.cs" />
+    <Compile Include="Лекция 2 - Члены классов и модификаторы доступа\L2S07 - Нарушение совместимости видимостей.cs" />
+    <Compile Include="Лекция 3 - Методы\L3S09 - Методы расширения.cs" />
+    <Compile Include="Лекция 4 - Свойства и индексаторы\L4S01 - Декорирование полей методами.cs" />
+    <Compile Include="Лекция 4 - Свойства и индексаторы\L4S02 - Декорирование полей свойствами.cs" />
+    <Compile Include="Лекция 4 - Свойства и индексаторы\L4S03 - Обращение к свойствам.cs" />
+    <Compile Include="Лекция 4 - Свойства и индексаторы\L4S04 - Свойства только для чтения.cs" />
+    <Compile Include="Лекция 4 - Свойства и индексаторы\L4S05 - Свойства с раздельным доступом.cs" />
+    <Compile Include="Лекция 4 - Свойства и индексаторы\L4S06 - Автосвойства и поля только для чтения.cs" />
+    <Compile Include="Лекция 4 - Свойства и индексаторы\L4S07 - Свойства-вычислители.cs" />
+    <Compile Include="Лекция 5 - Операторы\L5S01 - Перегрузка операторов.cs" />
+    <Compile Include="Лекция 5 - Операторы\L5S02 - Перегрузка операторов.cs" />
+    <Compile Include="Лекция 5 - Операторы\L5S03 - Операторы конверсии.cs" />
+    <Compile Include="Лекция 4 - Свойства и индексаторы\L4S08 - Индексаторы.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{43D780AA-642B-4D21-B6B2-F3C0390A7973}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <None Include="Лекция 3 - Методы\Lab.txt" />
+    <None Include="Лекция 4 - Свойства и индексаторы\Lab.txt" />
+    <None Include="Лекция 5 - Операторы\Lab.txt" />
+  </ItemGroup>
+</Project>

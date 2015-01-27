@@ -1,0 +1,3 @@
+Выделить общую функциональность классов GrayscaleFilter и LighteningFilter в абстрактный базовый класс PixelFilter
+- Проход по пикселям изображения осуществляется в PixelFilter
+- Конкретное изменение одного пикселя осуществляется в GrayscaleFilter и LighteningFilter

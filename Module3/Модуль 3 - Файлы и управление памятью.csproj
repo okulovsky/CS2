@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F70CBD56-0DF0-4B12-8EA2-98534049E11F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Module3</RootNamespace>
+    <AssemblyName>Module3</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Лекция 1 - Файлы\L1S01 - File и Directory.cs" />
+    <Compile Include="Лекция 1 - Файлы\L1S02 - FileInfo и DirectoryInfo.cs" />
+    <Compile Include="Лекция 1 - Файлы\L1S03 - Двоичные потоки.cs" />
+    <Compile Include="Лекция 1 - Файлы\L1S04 - Текстовые потоки.cs" />
+    <Compile Include="Лекция 1 - Файлы\L1S05 - MemoryStream.cs" />
+    <Compile Include="Лекция 1 - Файлы\L1S06 - Поток компрессии.cs" />
+    <Compile Include="Лекция 2 - Управление памятью\L2S01 - Работа сборщика мусора.cs" />
+    <Compile Include="Лекция 2 - Управление памятью\L2S02 - Принудительная сборка мусора.cs" />
+    <Compile Include="Лекция 2 - Управление памятью\L2S03 - Деструктор.cs" />
+    <Compile Include="Лекция 2 - Управление памятью\L2S04 - Паттерн Disposable.cs" />
+    <Compile Include="Лекция 2 - Управление памятью\L2S05 - Закрытие файла.cs" />
+    <Compile Include="Лекция 2 - Управление памятью\L2S06 - Закрытие файла.cs" />
+    <Compile Include="Лекция 2 - Управление памятью\L2S07 - try-catch-finally.cs" />
+    <Compile Include="Лекция 2 - Управление памятью\L2S08 - using.cs" />
+    <Compile Include="Лекция 3 - Рефлексия типов и сериализация\L3S01 - Рефлексия.cs" />
+    <Compile Include="Лекция 3 - Рефлексия типов и сериализация\L3S02 - Атрибуты.cs" />
+    <Compile Include="Лекция 3 - Рефлексия типов и сериализация\L3S03 - Сериализация и десериализация.cs" />
+    <Compile Include="Лекция 1 - Файлы\L1S07 - Диалоги выбора файлов.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{43D780AA-642B-4D21-B6B2-F3C0390A7973}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Лекция 1 - Файлы\Lab.txt" />
+    <None Include="Лекция 3 - Рефлексия типов и сериализация\Lab.txt" />
+    <None Include="Лекция 2 - Управление памятью\Lab.txt" />
+  </ItemGroup>
+</Project>

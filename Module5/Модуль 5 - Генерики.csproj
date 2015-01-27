@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B9C27F6-5A49-486D-AD11-03C2013D291F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Module5</RootNamespace>
+    <AssemblyName>Module5</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Лекция 1 - Коллекции\L1S01 - Нетипизированная коллекция ArrayList.cs" />
+    <Compile Include="Лекция 1 - Коллекции\L1S02 - Ошибки типизации.cs" />
+    <Compile Include="Лекция 1 - Коллекции\L1S03 - Типизированная коллекция List{T}.cs" />
+    <Compile Include="Лекция 1 - Коллекции\L1S04 - Хэш-таблицы.cs" />
+    <Compile Include="Лекция 1 - Коллекции\L1S05 - Сокращенная инициализация.cs" />
+    <Compile Include="Лекция 2 - Генерики\L2S04 - Требование интерфейса.cs" />
+    <Compile Include="Лекция 2 - Генерики\L2S03 - Требование new.cs" />
+    <Compile Include="Лекция 2 - Генерики\L2S02 - Ключевое слово default.cs" />
+    <Compile Include="Лекция 2 - Генерики\L2S01 - Объявление генерик-класса.cs" />
+    <Compile Include="Лекция 2 - Генерики\L2S05 - Генерик-метод.cs" />
+    <Compile Include="Лекция 2 - Генерики\L2S06 - Объяснение генерик-метода.cs" />
+    <Compile Include="Лекция 3 - Генерик-интерфейсы\L3S01 - Генерик-интерфейсы.cs" />
+    <Compile Include="Лекция 3 - Генерик-интерфейсы\L3S02 - Ковариация.cs" />
+    <Compile Include="Лекция 3 - Генерик-интерфейсы\L3S03 - Контравариация.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{43D780AA-642B-4D21-B6B2-F3C0390A7973}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Lab.txt" />
+  </ItemGroup>
+</Project>

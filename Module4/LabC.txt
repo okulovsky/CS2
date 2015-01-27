@@ -1,0 +1,18 @@
+﻿1. Создать интерфейс ISettings и включить в него методы, отвечающиу за перечисление параметров:
+  - GetParameters, выдающий информацию о параметрах
+  - AcceptParameters, принимающий double[], который будет настраивать поля класса в зависимости от полученных значений
+
+2. Создать реализации ISettings в классах LighteningSettings и GrayscaleSettings
+
+3. Создать абстрактный базовый класс SettableFilter, который:
+  - принимает в конструкторе объект ISettings
+  - перенаправляет метод GetPatameters на ISettings
+  - реализует метод Process, который:
+    а) передает в ISettings.AcceptParameters массив параметров
+	б) вызывает собственный абстрактный метод Process, передавая ему вместо массива параметров объект ISettings
+
+4. Вывести PixelFilter из SettableFilter и обновить его архитектуру:
+  - PixelFilter перегружает метод Process, принимающий ISettings
+  - ProcessPixel должен принимать ISettings
+  
+5. Обновить LighteningFilter и GrayscaleFilter
